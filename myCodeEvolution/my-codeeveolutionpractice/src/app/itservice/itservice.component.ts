@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ItserviceService } from '../itservice.service';
 
 @Component({
   selector: 'app-itservice',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItserviceComponent implements OnInit {
 
-  constructor() { }
+  public itemployees = [] as any;
+
+  constructor(private _itservice : ItserviceService) { }
 
   ngOnInit(): void {
+   this.itemployees= this._itservice.getITBasedEmployees();
   }
-
 }
