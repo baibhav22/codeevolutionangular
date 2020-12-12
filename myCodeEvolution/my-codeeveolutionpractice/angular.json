@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "my-codeeveolutionpractice"
+  "defaultProject": "my-codeeveolutionpractice",
+  "cli": {
+    "analytics": false
+  }
 }
