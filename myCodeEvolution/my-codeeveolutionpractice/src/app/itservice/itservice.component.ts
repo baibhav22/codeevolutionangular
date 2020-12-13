@@ -9,6 +9,7 @@ import { ItserviceService } from '../itservice.service';
 export class ItserviceComponent implements OnInit {
 
   public itemployees = [] as any;
+  public name=" ";
 
   constructor(private _itservice : ItserviceService) { }
 
