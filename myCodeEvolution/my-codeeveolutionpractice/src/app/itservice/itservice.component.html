@@ -2,8 +2,11 @@
 <ul *ngFor = "let employees of itemployees">
     <li>{{employees.name}}</li>
     <li>{{employees.age}}</li>
-    <li>{{employees.age}}</li>
 </ul>
 
 <input [(ngModel)]="name" type="text" > 
 {{name}}
+
+<button (click)=onClick()> Click me</button>
+
+<h2>Baibhav Event says {{eventName}}</h2>
